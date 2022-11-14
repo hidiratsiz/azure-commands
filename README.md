@@ -13,7 +13,7 @@ This script will loop through all resource groups that have the tag ‘delete’
 If you don’t want to be prompted for every resource group, then add a -y to the az group delete -n ${rg} command like so: az group delete -n ${rg} -y.
 
 ```
-###### az group list --tag delete --query [].name -o tsv | xargs -otl az group delete --no-wait  -n
+ az group list --tag delete --query [].name -o tsv | xargs -otl az group delete --no-wait  -n
 ```
 
 I found the code from this site
